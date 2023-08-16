@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{7186CAA7-01B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XivToolsWpf", "Lib\XivToolsWpf\XivToolsWpf.csproj", "{6B80B721-D00B-438F-80B8-DD1F2DFDF315}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E750F4E8-86D5-490F-8311-CF90BE4D5DAB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

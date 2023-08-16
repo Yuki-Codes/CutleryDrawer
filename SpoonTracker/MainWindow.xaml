@@ -1,12 +1,30 @@
-﻿<Window x:Class="SpoonTracker.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SpoonTracker"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+﻿<Window
+	x:Class="SpoonTracker.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:SpoonTracker"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:xivToolsWpf="clr-namespace:XivToolsWpf.Controls;assembly=XivToolsWpf"
+	Title="Cutlery Drawer - Spoon Tracker"
+	Width="800"
+	Height="450"
+	Background="{DynamicResource BackgroundBrush}"
+	mc:Ignorable="d">
+	<Grid>
+		<TabControl Style="{StaticResource XivToolsSideTabs}">
+			<TabItem Header="Goals">
+				<local:Goals />
+			</TabItem>
+			<TabItem Header="Mood" />
+			<TabItem Header="Journal" />
+			<TabItem Header="Symptoms" />
+			<TabItem Header="Schedule" />
+			<!--<TabItem>
+				<TabItem.Header>
+					<xivToolsWpf:IconBlock Icon="Cogs" />
+				</TabItem.Header>
+			</TabItem>-->
+		</TabControl>
+	</Grid>
 </Window>
